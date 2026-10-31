@@ -1,0 +1,57 @@
+# Python environments and local configuration
+.venv/
+venv/
+env/
+.python-version
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# Local documents; preserve the directory placeholder
+/data/documents/*
+!/data/documents/.gitkeep
+
+# Local vector stores and databases
+/chroma/
+/chroma_db/
+/.chroma/
+/data/chroma/
+/data/vectorstore/
+/data/vectorstores/
+/storage/
+*.sqlite
+*.sqlite3
+*.db
+
+# Generated data, artifacts, and evaluation outputs
+/data/processed/
+/data/generated/
+/outputs/
+/artifacts/
+/evals/results/
+*.log
+
+# Python packaging, tests, and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
