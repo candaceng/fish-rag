@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-31",
+  "usage_review": {
+    "url": "https://www.ontario.ca/page/copyright-information",
+    "access_date": "2026-10-31",
+    "local_path": "data/documents/ontario-copyright.html",
+    "sha256": "267062ddf56c322d5f0e5a5fbfab26b79df637040d9455498c394e73ff7166c8",
+    "basis": "Ontario website Crown copyright policy: unchanged reproduction for noncommercial purposes with credit and Crown copyright acknowledgment, unless otherwise indicated.",
+    "scope": "Unchanged local HTML snapshots for personal noncommercial research; extracted text and chunks remain local. No blanket Open Government Licence or MIT licence is asserted for these materials.",
+    "restrictions": "Do not republish source content or saved notebook excerpts. Do not assume permission for commercial use, third-party media, or future public answer generation. Review terms again for those uses."
+  },
+  "regulation_year_evidence": {
+    "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary",
+    "edition": "2026 Ontario Fishing Regulations Summary, effective January 1, 2026",
+    "linked_pdf": "https://www.ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "note": "The two downloaded regulation chapters link to this 2026 PDF. Web publication dates describe the original pages, not the regulation edition. The PDF is not downloaded or ingested."
+  },
+  "sources": [
+    {
+      "source_id": "ontario-general-regulations",
+      "title": "General fishing regulations",
+      "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/general-fishing-regulations",
+      "geographic_scope": "Ontario; provincial rules, subject to zone and waterbody exceptions",
+      "source_type": "regulation_summary",
+      "publication_date": "2019-01-14",
+      "publication_year": 2019,
+      "updated_date": "2026-08-04",
+      "regulation_year": 2026,
+      "local_path": "data/documents/ontario-general-regulations.html",
+      "publisher": "Government of Ontario, Ministry of Natural Resources",
+      "access_date": "2026-10-31",
+      "format": "text/html",
+      "page": null,
+      "section_locator": "HTML heading hierarchy; extracted at runtime",
+      "sha256": "49a93ce55dece861dd9c4ca47c3cfa8972bb287bfb45f3caf17a403fef70fc09",
+      "terms_url": "https://www.ontario.ca/page/copyright-information",
+      "attribution": "© King's Printer for Ontario. Source: Government of Ontario, Ministry of Natural Resources; see title and URL."
+    },
+    {
+      "source_id": "ontario-zone-17",
+      "title": "Fisheries Management Zone 17",
+      "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-17",
+      "geographic_scope": "Ontario Fisheries Management Zone 17 (Peterborough and the Kawarthas); consult boundaries and waterbody exceptions",
+      "source_type": "regulation_summary",
+      "publication_date": "2019-01-14",
+      "publication_year": 2019,
+      "updated_date": "2026-08-04",
+      "regulation_year": 2026,
+      "local_path": "data/documents/ontario-zone-17.html",
+      "publisher": "Government of Ontario, Ministry of Natural Resources",
+      "access_date": "2026-10-31",
+      "format": "text/html",
+      "page": null,
+      "section_locator": "HTML heading hierarchy; extracted at runtime",
+      "sha256": "4106891daaf97eb06e4df66d5f4a18a9e59e925fa03b353b67140767453ba087",
+      "terms_url": "https://www.ontario.ca/page/copyright-information",
+      "attribution": "© King's Printer for Ontario. Source: Government of Ontario, Ministry of Natural Resources; see title and URL."
+    },
+    {
+      "source_id": "ontario-learn-to-fish",
+      "title": "Learn to Fish – Guide",
+      "url": "https://www.ontario.ca/page/learn-fish-guide",
+      "geographic_scope": "Ontario; general beginner guidance, not Rice Lake field observations",
+      "source_type": "fundamentals_guide",
+      "publication_date": "2016-07-25",
+      "publication_year": 2016,
+      "updated_date": "2023-08-08",
+      "regulation_year": null,
+      "local_path": "data/documents/ontario-learn-to-fish.html",
+      "publisher": "Government of Ontario, Ministry of Natural Resources",
+      "access_date": "2026-10-31",
+      "format": "text/html",
+      "page": null,
+      "section_locator": "HTML heading hierarchy; extracted at runtime",
+      "sha256": "728add8d923138ad5e16e573123d58e6c465bc4eccc4d107fcf0fc8207546d97",
+      "terms_url": "https://www.ontario.ca/page/copyright-information",
+      "attribution": "© King's Printer for Ontario. Source: Government of Ontario, Ministry of Natural Resources; see title and URL."
+    }
+  ]
+}
