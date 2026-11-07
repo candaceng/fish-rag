@@ -12,6 +12,9 @@ license = { file = "LICENSE" }
 dependencies = []
 
 [project.optional-dependencies]
+retrieval = [
+    "sentence-transformers>=5,<6",
+]
 ingestion = [
     "llama-index-core>=0.14,<0.15",
     "beautifulsoup4>=4.12,<5",
