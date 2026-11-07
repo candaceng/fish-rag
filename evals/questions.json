@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-06",
+  "source_manifest": "data/sources.json",
+  "source_snapshot_sha256": {
+    "ontario-general-regulations": "49a93ce55dece861dd9c4ca47c3cfa8972bb287bfb45f3caf17a403fef70fc09",
+    "ontario-zone-17": "4106891daaf97eb06e4df66d5f4a18a9e59e925fa03b353b67140767453ba087",
+    "ontario-learn-to-fish": "728add8d923138ad5e16e573123d58e6c465bc4eccc4d107fcf0fc8207546d97"
+  },
+  "scope": "Manual supporting-fact labels for the three local snapshots, not generated answers or evaluation results. Regulatory questions refer to the downloaded 2026 summary, not independently reverified current law.",
+  "answerability_labels": {
+    "supported": "All requested information is supported by the listed source sections, including stated scope qualifications.",
+    "partially_supported": "Listed sections support general guidance, but the requested lake-specific detail is absent. Missing details must be acknowledged.",
+    "unsupported": "The snapshots provide no supporting evidence for the requested specific claim. Relevant sources and expected supporting facts are empty; do not substitute generic advice for an answer."
+  },
+  "annotation_notes": [
+    "Section headings are exact notebook metadata paths. Glossary terms are represented as subsections using the original definition labels.",
+    "All listed sections are needed for questions marked requires_multiple_sections; a single rule chunk does not replace its exceptions or qualifiers.",
+    "Supporting facts are paraphrased manual expectations, not source excerpts or model outputs. Explicit limitations describe absent evidence or source scope.",
+    "No retrieval or answer-quality scores have been measured. Any future scoring must account for overlapping chunks from the same section rather than assuming fixed node IDs."
+  ],
+  "questions": [
+    {
+      "id": "fishrag-001",
+      "category": "bass_biology",
+      "question": "According to the guide, how does jaw position distinguish largemouth from smallmouth bass?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Identifying, catching and handling fish species > Smallmouth and largemouth bass"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The largemouth jaw hinge extends past the eye.",
+        "The smallmouth jaw hinge does not extend past the centre of the eye."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-002",
+      "category": "bass_biology",
+      "question": "How do the guide's typical largemouth and smallmouth habitats differ?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Identifying, catching and handling fish species > Smallmouth and largemouth bass"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "Largemouth are more often associated with warm-water weed beds and ambush prey from weeds.",
+        "Smallmouth favour cool, clear water and rocky or sandy lake and river areas.",
+        "These are general habitat descriptions, not observations of bass locations in Rice Lake."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-003",
+      "category": "technique_advice",
+      "question": "What starting presentation and cover does the guide suggest for largemouth bass in weeds?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Identifying, catching and handling fish species > Smallmouth and largemouth bass"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "Place bait or a lure at weed edges or openings.",
+        "The guide suggests real or artificial worms and working around logs, boulders, and other cover.",
+        "The advice does not guarantee a catch or establish a lake-specific best lure."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-004",
+      "category": "technique_advice",
+      "question": "What locations, hot-summer adjustment, and food preference does the guide mention for smallmouth bass?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Identifying, catching and handling fish species > Smallmouth and largemouth bass"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "Look for rocky points, shoals, drop-offs, and submerged logs.",
+        "The guide suggests fishing deeper in hotter parts of summer but gives no numeric depth.",
+        "The guide identifies crayfish as a favourite food and says many bait or lure types may work."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-005",
+      "category": "technique_advice",
+      "question": "What gives a jig its action, and can it be paired with natural bait?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Tackle and other gear > Types of lures > Jigs"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "A jig is described as a single hook with a weighted eye.",
+        "The angler supplies the motion; proper use creates a jerky vertical action.",
+        "Jigs can be used alone or with natural bait."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-006",
+      "category": "technique_advice",
+      "question": "What general advice does the guide give about time of day and choosing bait that resembles local food?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Tips and techniques > Time of day",
+            "Tips and techniques > Imitate what the fish are eating"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "Many fish are more active at dawn or dusk, but fish can be caught at other times too.",
+        "Docks, weeds, log jams, and deeper water are suggested hiding areas.",
+        "Observe food such as dragonflies, minnows, and frogs and select imitating bait or lures.",
+        "This is general fish advice; it does not report a Rice Lake bite window."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-007",
+      "category": "fish_handling",
+      "question": "According to the guide, how should I handle a fish that I plan to release?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Identifying, catching and handling fish species > Handling fish"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "Wet hands help avoid removing the protective slime coat, which protects against disease and infection.",
+        "Avoid touching the gills or eyes and return the fish to the water as soon as possible.",
+        "Use care around sharp spines and teeth."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-008",
+      "category": "zone_17_regulations",
+      "question": "What are the 2026 Zone 17 zone-wide season and licence limits for largemouth and smallmouth bass combined, and do they override exceptions?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-zone-17",
+          "section_headings": [
+            "Zone-wide seasons and limits",
+            "Zone-wide seasons and limits > Largemouth and smallmouth bass combined"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The zone-wide bass season runs from the third Saturday in June through December 15.",
+        "The combined bass limits are S (sport) 6 and C (conservation) 2.",
+        "Zone-wide rules are subject to the listed species exceptions, waterbody exceptions, and fish sanctuaries."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-009",
+      "category": "ontario_and_zone_17_regulations",
+      "question": "Under the 2026 summary, does a Zone 17 sport licence allow six largemouth plus six smallmouth bass?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-general-regulations",
+          "section_headings": [
+            "Glossary of terms > Aggregate (combined) limits"
+          ]
+        },
+        {
+          "source_id": "ontario-zone-17",
+          "section_headings": [
+            "Zone-wide seasons and limits > Largemouth and smallmouth bass combined"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The Zone 17 sport limit is six bass combined, not six of each species.",
+        "An aggregate limit applies to the combination; separate limits cannot be retained for each species.",
+        "Zone-specific exceptions and sanctuaries still apply."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-010",
+      "category": "ontario_regulations",
+      "question": "In the downloaded summary, how does a closed season differ from an open season with a zero limit if I intend to release every fish?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-general-regulations",
+          "section_headings": [
+            "Glossary of terms > Catch and Release Seasons",
+            "Glossary of terms > Open seasons"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "Targeting a species in its closed season is prohibited even with an intention to release it.",
+        "An open season with a zero limit permits targeting but requires release under the applicable release rules.",
+        "Fish accidentally caught during a closed season must be immediately released."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-011",
+      "category": "ontario_regulations",
+      "question": "Do fish given to a friend count toward my daily catch limit, and does possession include fish in storage?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-general-regulations",
+          "section_headings": [
+            "Glossary of terms > Catch and possession limits"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "Fish given away count toward the catcher's daily catch limit, including gifts within the fishing party.",
+        "Possession includes fish on hand, in cold storage, in transit, or elsewhere.",
+        "Possession limits normally equal one day's catch limit unless otherwise specified."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-012",
+      "category": "tournament_preparation",
+      "question": "According to the downloaded 2026 summary, during an otherwise open Zone 17 bass season outside sanctuaries, what conditions apply to a sport-license angler selectively live-releasing bass from a boat after reaching six retained bass?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-general-regulations",
+          "section_headings": [
+            "Catch and retain rules",
+            "Glossary of terms > Livewell"
+          ]
+        },
+        {
+          "source_id": "ontario-zone-17",
+          "section_headings": [
+            "Zone-wide seasons and limits > Largemouth and smallmouth bass combined"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The boat provision allows catching, holding, and selective live release of bass subject to its conditions; it does not permit holding more than six combined bass at any time on a sport licence.",
+        "Fish must comply with applicable size limits and be held in a livewell with a mechanical aerator operating continuously.",
+        "A livewell must be attached to or part of a boat, hold at least 46 litres, and have water-exchange capacity and aeration while holding live fish.",
+        "Fish condition must be monitored; only fish expected to survive may be released, and fish not live-released count toward catch and possession limits.",
+        "Zone 17's combined sport bass limit is six, subject to exceptions and sanctuaries."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-013",
+      "category": "regulation_exceptions",
+      "question": "Does the 2026 Zone 17 zone-wide walleye season allow walleye fishing in Lake Scugog or the described Scugog River waters?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-zone-17",
+          "section_headings": [
+            "Zone-wide seasons and limits > Walleye and sauger combined",
+            "Waterbody exceptions"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The zone-wide walleye/sauger season runs from the second Saturday in May through November 15.",
+        "The Lake Scugog and Scugog River waterbody exception closes walleye fishing all year in the described waters.",
+        "The exception includes waters south of Highway 7A, Blackstock Creek, Nonquon River, Scugog River to the Trent Severn Dam in Lindsay, Mariposa Brook, and East Cross Creek.",
+        "The waterbody closure overrides the zone-wide season there."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-014",
+      "category": "regulation_exceptions",
+      "question": "Under the 2026 summary, may I target bass on November 20 within 100 metres of either side of the Bridgenorth Causeway on Chemong Lake just because the zone-wide bass season is open?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-zone-17",
+          "section_headings": [
+            "Zone-wide seasons and limits > Largemouth and smallmouth bass combined",
+            "Fish sanctuaries > No fishing - January 1 to Friday before the second Saturday in May and November 16 to December 31"
+          ]
+        },
+        {
+          "source_id": "ontario-general-regulations",
+          "section_headings": [
+            "Glossary of terms > Fish sanctuaries"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The zone-wide bass season extends to December 15, but sanctuary restrictions take precedence.",
+        "The listed Chemong Lake sanctuary covers 100 metres on both sides of Bridgenorth Causeway on County Road 16 in Smith and Ennismore Townships.",
+        "That sanctuary is closed from November 16 through December 31, which includes November 20.",
+        "No fishing of any kind is permitted in a fish sanctuary during its closure, including catch-and-release bass targeting."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-015",
+      "category": "regulation_exceptions",
+      "question": "How do the 2026 walleye limits and size restriction for the described Balsam and Mitchell Lake waters differ from Zone 17's zone-wide rule, and which season applies?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-zone-17",
+          "section_headings": [
+            "Zone-wide seasons and limits > Walleye and sauger combined",
+            "Species exceptions > Walleye"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The zone-wide combined walleye/sauger limits are S 4 and C 1, with fish between 35 and 50 centimetres.",
+        "The walleye species exception for the described Balsam and Mitchell Lake waters specifies S 3 and C 1, with none between 37 and 55 centimetres.",
+        "That exception uses the zone-wide season: second Saturday in May through November 15.",
+        "The exception describes connected waters as well as the named lakes; its geographic descriptions must be retained."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-016",
+      "category": "ontario_regulations",
+      "question": "Does keeping bass alive in a livewell on a boat mean I can tow them home alive overland without a permit under the downloaded summary?",
+      "answerability": "supported",
+      "requires_multiple_sections": true,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-general-regulations",
+          "section_headings": [
+            "Glossary of terms > Livewell",
+            "Transporting sport fish"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The summary prohibits transporting live fish overland without a permit, except baitfish; bass are not covered by that baitfish exception.",
+        "Livewells should be drained and emptied, including live fish, before overland transport.",
+        "Sport fish transported overland must be dead and should be on ice, rather than in a water-filled livewell."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-017",
+      "category": "zone_17_regulations",
+      "question": "What bait-management zone does the downloaded Zone 17 chapter identify, and what does it say about crossing bait-management-zone boundaries with baitfish or leeches?",
+      "answerability": "supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-zone-17",
+          "section_headings": [
+            "General information"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "FMZ 17 is part of the Southern Bait Management Zone.",
+        "Live or dead baitfish or leeches may not be transported into or out of a bait-management zone.",
+        "The stated exception is for baitfish and leeches that are both dead and preserved; dead alone does not satisfy that wording.",
+        "The chapter refers readers to the separate Bait section for more detail; that section is not among these three snapshots."
+      ],
+      "missing_evidence": []
+    },
+    {
+      "id": "fishrag-018",
+      "category": "rice_lake_conditions",
+      "question": "What exact depth in metres should I fish for smallmouth bass on Rice Lake this hot afternoon, and what general guidance do these sources offer?",
+      "answerability": "partially_supported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [
+        {
+          "source_id": "ontario-learn-to-fish",
+          "section_headings": [
+            "Identifying, catching and handling fish species > Smallmouth and largemouth bass"
+          ]
+        }
+      ],
+      "expected_supporting_facts": [
+        "The guide suggests deeper water in hotter parts of summer and identifies rocky points, shoals, drop-offs, and submerged logs as places to look.",
+        "This general guidance does not establish a numeric depth or current Rice Lake fish location."
+      ],
+      "missing_evidence": [
+        "Current Rice Lake water temperatures, fish observations, and location-specific depth information."
+      ]
+    },
+    {
+      "id": "fishrag-019",
+      "category": "rice_lake_conditions",
+      "question": "What was Rice Lake's surface water temperature at the Hastings launch on November 5, 2026?",
+      "answerability": "unsupported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [],
+      "expected_supporting_facts": [],
+      "missing_evidence": [
+        "A dated water-temperature observation for that specific Rice Lake location; none of the three snapshots supplies it."
+      ]
+    },
+    {
+      "id": "fishrag-020",
+      "category": "rice_lake_conditions",
+      "question": "Which lure colour will catch the most bass on Rice Lake on November 7, 2026?",
+      "answerability": "unsupported",
+      "requires_multiple_sections": false,
+      "relevant_sources": [],
+      "expected_supporting_facts": [],
+      "missing_evidence": [
+        "Dated Rice Lake catch evidence comparing lure colours and conditions; the snapshots contain no such comparison and cannot substantiate a future winning lure."
+      ]
+    }
+  ]
+}
